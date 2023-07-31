@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HTML-5 | Assessment</title>
+    <style>
+    *{ 
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;  
+    }
+    .container{
+        width: 80%;
+        height: inherit;
+        background-color: skyblue;
+        margin: 2% auto;
+        padding-bottom: 1%;
+        font-size: 20px;
+    } 
+    .container h2{
+        padding: 2% 5%;
+    }
+    hr{
+        margin: 0 5%;
+        border-color: rgb(164, 160, 160);
+    } 
+    .container .main{
+        width: 90%;
+        background-color: white;
+        margin: 2% auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }  
+    .container .main h3{
+        padding: 2%;
+    }
+    .container .main .left{
+        margin-left: 2%;
+        
+    }
+    .container .main .center{
+        margin: 2% 10% 0 0;
+    }
+    .container .main .center .p{
+        color: rgb(213, 51, 78);
+    }
+    .container .main .center .q{
+        color: skyblue;
+    }
+    .container .main .right{
+        margin: 2% 20% 0 0;
+        font-size: 30px;
+        color: rgb(213, 51, 78);
+    }
+   
+    .container .last{
+        width: 90%;
+        background-color: white;
+        margin: 2% auto;
+        padding: 2% 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    input{
+      margin-top: 2%;
+      text-decoration: none;
+      padding: 10px 30px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      color: #333;
+      font-weight: 500;
+    }
+     textarea{
+        margin: 5% 0;
+        color: #333;
+        border: 1px solid #333;
+        border-radius: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .container .last .form button{
+        padding: 8px 10px;
+        background-color: rgb(242, 59, 59);
+        border-radius: 2px;
+        border-color: transparent;
+        color: white;
+        display: block;
+        width: fit-content;
+    }
+    .container .last .form{
+        width: 45%;
+        padding: 25px;
+    }
+
+    .form .in{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container .last .form .in input{
+        width: 48%;
+    }
+
+    .container .last .form .in  textarea{
+        width: 100%;
+    }
+
+    .container .last .map{
+        margin-top: 1%;
+        width: 45%;
+        height: 320px;
+    }
+    .container .last .map iframe{
+        width: 100%;
+        height: inherit;
+    }
+    .container .last .map span{
+        font-size: 45px;
+    }
+    .container .last .map .facebook{
+        color: rgb(62, 62, 229);
+    }
+    .container .last .map .twitter{
+        color: skyblue;
+    }
+    .container .last .map .linkedin{
+        color: rgb(26, 143, 190);
+    }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+      <h2>CONTACT US</h2>
+      <hr>
+           <div class="main">
+                    <div class="left">
+                        <h3>ADDRESS:</h3>
+                        <h4>Saint Marco Street, 6th</h4>
+                        <h4>floor,Tokyo,Japan,123456.</h4>
+                    </div>
+                    <div class="center">
+                        <p> 
+                        <span class="p">
+                            <i class="fa-sharp fa-solid fa-square-phone"></i>
+                        </span>
+                        <span class="p">
+                            +91 1234567890
+                        </span>
+                        </p>
+                        <p>
+                            <span class="q">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <span class="q">
+                                example@gmail.com
+                            </span>
+                        </p>
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+           </div>
+
+           <div class="last">
+                    <div class="form">
+                        <div class="in">
+                         <!-- <label for="#">Name:</label>    -->
+                         <input type="text" min="3" max="6" placeholder="Name:">
+                         <!-- <label for="#">Company:</label> -->
+                         <input type="text"  placeholder="Company:"> <br>
+                         <!-- <label for="#">Email:</label> -->
+                         <input type="email"  placeholder="Email:">
+                         <!-- <label for="#">Mobile:</label> -->
+                         <input type="number"  placeholder="Mobile:"> <br>
+                         <textarea placeholder="Message" id="" cols="55" rows="8">Message:</textarea> <br>
+                        </div>
+                        <button>Send</button>
+                    </div>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.553166742113!2d-0.13281452368088534!3d51.521413209679864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e1672c317%3A0x2eb39a3b3d33d9f5!2sMalet%20St%2C%20London%2C%20UK!5e0!3m2!1sen!2sin!4v1690441552490!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         <div>
+                            <span>
+                                <i class="fa-brands fa-square-facebook facebook"></i>
+                            </span>
+                            <span>
+                                <i class="fa-brands fa-square-twitter twitter"></i>
+                            </span>
+                            <span>
+                                <i class="fa-brands fa-linkedin linkedin"></i>
+                            </span>
+                            <span>
+                                <i class="fa-brands fa-square-github"></i>   
+                            </span>
+                        </div>
+                    </div>
+           </div>
+    </div> 
+</body>
+</html>
